@@ -2,7 +2,6 @@
   functions = "functions-simple"
   publish = "."
 
-[[redirects]]
-  from = "/.netlify/functions/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+[functions]
+  node_bundler = "esbuild"
+
