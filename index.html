@@ -985,7 +985,7 @@ The darkest evening of the year.`,
 
             try {
                 // Generate story via serverless function
-                const storyResponse = await fetch("/api/generate", {
+                const storyResponse = await fetch("/.netlify/functions/generate", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -1002,7 +1002,7 @@ The darkest evening of the year.`,
                 const storyJson = storyResult.data;
 
                 // Generate poem via serverless function
-                const poemResponse = await fetch("/api/generate", {
+                const poemResponse = await fetch("/.netlify/functions/generate", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -1019,7 +1019,7 @@ The darkest evening of the year.`,
                 const poemJson = poemResult.data;
 
                 // Generate vocabulary via serverless function
-                const vocabResponse = await fetch("/api/generate", {
+                const vocabResponse = await fetch("/.netlify/functions/generate", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
